@@ -16,7 +16,7 @@ def calculate_projected_losses(building_data, years):
         inflation_rate = building['inflation_rate']
 
         # Initial cost
-        initial_cost = construction_cost * floor_area 
+        initial_cost = construction_cost * floor_area
 
         # Calculate future cost
         future_cost = initial_cost * (1 + inflation_rate) ** years
